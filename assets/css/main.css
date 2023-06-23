@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 * {
     padding: 0;
@@ -21,6 +21,7 @@
 /* start navbar  */
 .navbar {
     background-color: white;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -100,11 +101,65 @@ form .btn:hover {
 .container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     height: 100vh;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    padding-top: 100px;
 }
-
+.container .welcome-msg {
+    font-size: 44px;
+    font-weight: 700;
+    width: 100%;
+    z-index: 2;
+}
+.container .home-p {
+    margin: 0;
+    z-index: 2;
+    font-size: 20px;
+    width: 100%;
+    font-weight: 400;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.home-form {
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.home-form input {
+    width: 408.922px;
+    border: 0;
+    outline: 0;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+#home .home-form .home-btn {
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--color-primary);
+    border-radius: 7px;
+    padding: 8px 20px 10px 20px;
+    font-size: 16px;
+}
+#home .home-form .home-btn:hover {
+    background-color: rgb(243, 77, 77);
+}
 /* end home */
-
+/* start flags */
+.flags .flags-img img{
+    padding: 40px;
+    max-width: 80%;
+    transition: 0.3s;
+    opacity: 0.5;
+    filter: grayscale(100);
+}
+.flags .flags-img img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+}
+/* end flags */
 /* start about section  */
 
 /* end about section */
