@@ -7,5 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 :root{
+    --color-primary: #e84545;
+    --color-primary-rgb: 232, 69, 69;
+    --color-secondary: #32353a;
+    --color-background: #f4f4f4;
+    --color-box-background: #f7f7f7;
 }
 
