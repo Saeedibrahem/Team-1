@@ -18,7 +18,6 @@
     --color-box-background: #f7f7f7;
 }
 
-<<<<<<< HEAD
 
 
 
@@ -34,7 +33,7 @@
 .services__title{
     text-align: center;
 }
-.services__title h2{
+.title h2{
     font-size: 2rem;
     width: fit-content;
     margin: auto;
@@ -42,19 +41,19 @@
     position: relative;
 }
 
-.services__title h2::before{
+.title h2::before{
     content: "";
     width: 50px;
-    height: 2px;
+    height: 1px;
     background-color: var(--color-primary);
     position: absolute;
     top: 20px;
     left: -40%;
 }
-.services__title h2::after{
+.title h2::after{
     content: "";
     width: 50px;
-    height: 2px;
+    height: 1px;
     background-color: var(--color-primary);
     position: absolute;
     top: 20px;
@@ -132,6 +131,11 @@
     position: relative;
 }
 
+.service-disc h4:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
 .service-disc h4::after{
     content: "";
     width: 20px;
@@ -143,125 +147,116 @@
     z-index: 5;
 }
 
-/* ///////////////////////// */
+/*! end services part */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-/* start navbar  */
-.navbar {
-    background-color: white;
+/*& start Features part */
+.features{
+    /* position: relative; */
+    margin-bottom: 5rem;
+    /* background-color: #e84545; */
+}
+.features__title{
+    text-align: center;
 }
 
-.navbar-brand {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--color-secondary);
-    /* color: white; */
+.features__txt h3{
+    font-size: 26px;
+    font-weight: 700;
 }
-
-span {
-    color: var(--color-primary);
-}
-
-.collapse {
-    flex-grow: 0;
-}
-
-.navbar-nav {
-    gap: 15px;
-    padding: 18px 15px;
-}
-
-.navbar-nav li a {
-    font-weight: 500;
-    font-family: Lato, sans-serif;
-}
-
-.navbar-nav li a {
-    color: var(--color-secondary);
-}
-
-.navbar-nav li a:hover {
-    color: var(--color-primary);
-}
-
-.navbar-nav li .active {
-    color: var(--color-primary) !important;
-}
-
-/* buttom */
-form .btn {
-    padding: 7px 25px;
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: 400;
-    background-color: var(--color-primary);
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-form .btn:hover {
-    background-color: rgb(243, 77, 77);
-}
-
-/* end navbar  */
-
-/* start home  */
-#home {
-    height: 100vh;
-    overflow: hidden;
+.features__imgs{
+    margin-bottom: 8rem;
     position: relative;
-    background-image: url(../images/hero-bg.jpg);
-    background-position: 0rem -10rem;
 }
 
-#home::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, .5);
-    height: 100%;
+.features__img1{
+    position: relative;
+    border: 5px solid #FEFEFE;
+    margin-left: auto;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+
+}
+
+.features__img1 img{
     width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 1;
+    height: 100%;
+    object-fit: cover;
+
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    height: 100vh;
+.features__img2{
+    border: 5px solid #FEFEFE;
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    width: 40%;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+
+}
+.features__img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.features button{
+    background-color: #E84545;
+    color: white;
+}
+.features button:hover{
+    background-color: #EA5757;
+    color: white;
 }
 
-/* end home */
 
-/* start about section  */
 
-/* end about section */
->>>>>>> 7377f156b524b625aad73aa920061edc80cc76c8
+
+.features-2-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.features-2-txt{
+    padding: 8rem 2rem;
+}
+.features-2 .row .features-2-txt  h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.features-2 .row .features-2-txt p{
+    color: #4D5154;
+}
+.features-2 .row .features-2-txt span{
+}
+.features-2 .row .features-2-txt i{
+    color: #E84545;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -----------------Pricing--------------- */
 
@@ -284,12 +279,7 @@ form .btn:hover {
     width: 2.7rem;
     background-color: #e84545;
     top: 1.2rem;
-<<<<<<< HEAD
     right: -50%;
-
-=======
-    right: 36.5rem;
->>>>>>> 9ee19c072ed7a9d8d71531d3e53551a893435886
 }
 
 #Pricing h2::before {
@@ -365,11 +355,8 @@ form .btn:hover {
     font-weight: 400;
     color: #a7a9ab;
 }
-<<<<<<< HEAD
 
 .price_text i {
     font-size: 24px;
     color: #0a9856;
 }
-=======
->>>>>>> 9ee19c072ed7a9d8d71531d3e53551a893435886
