@@ -14,3 +14,98 @@
     --color-box-background: #f7f7f7;
 }
 
+/* -----------------Pricing--------------- */
+
+
+#Pricing h2 {
+    position: relative;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+#Pricing h2::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 2.7rem;
+    background-color: #e84545;
+    top: 1.2rem;
+    right: 36.5rem;
+
+}
+
+#Pricing h2::before {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 2.7rem;
+    background-color: #e84545;
+    top: 1.2rem;
+    left: 36.5rem;
+
+}
+
+.col-4 {
+    border-radius: 15px;
+    box-shadow: 0 2px 22px -12px;
+}
+
+.mid {
+    transform: scale(1.15);
+    border: 2.5px solid #e84545;
+    box-shadow: none;
+    background-color: white;
+}
+
+.row h3 {
+    font-size: 1.25rem;
+}
+
+.icon {
+    margin: 1.3rem 0 2rem 0;
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+}
+
+.icon i {
+    position: absolute;
+    background-color: #e84545;
+    height: 70px;
+    width:  70px;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    height: 86px;
+    width: 86px;
+    background-color: #f8cbcb;
+    border-radius: 50%;
+}
+
+.icon::before {
+    content: "";
+    position: absolute;
+    height: 102px;
+    width: 102px;
+    background-color: #fdecec;
+    border-radius: 50%;
+}
+
+.price h4 {
+    color: #e84545;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.price sub {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a7a9ab;
+}
