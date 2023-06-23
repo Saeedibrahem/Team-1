@@ -14,6 +14,158 @@
     --color-box-background: #f7f7f7;
 }
 
+
+
+
+
+
+/* ! start services part */
+
+.services{
+    /* background-color: aquamarine; */
+    position: relative;
+}
+
+.services__title{
+    text-align: center;
+}
+.services__title h2{
+    font-size: 2rem;
+    width: fit-content;
+    margin: auto;
+    font-weight: 700;
+    position: relative;
+}
+
+.services__title h2::before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 20px;
+    left: -40%;
+}
+.services__title h2::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 20px;
+    right: -40%;
+}
+
+.services__content{
+    /* border-top: 2px solid #E8E9E9; */
+    position: relative;
+}
+
+.service-icon{
+    position: relative;
+}
+
+.service-icon::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F8C7C7;
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    z-index: 1;
+}
+
+.service-icon i{
+    font-size: 3.5rem;
+    color: #636669;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+
+}
+.col-6{
+    position: relative;
+}
+
+
+.col-6::after{
+    content: "";
+    width: 95%;
+    height: 2px;
+    background-color: #E8E9E9;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.service-disc p{
+    position: relative;
+    font-size: 14px;
+    width: fit-content;
+}
+/* .service-disc p::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F8C7C7;
+    position: absolute;
+    bottom: 5px;
+    left: -50px;
+    z-index: 1;
+} */
+
+
+
+
+.service-disc h4{
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.service-disc h4::after{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #E84545;
+    position: absolute;
+    top: -40px;
+    left: -120px;
+    z-index: 5;
+}
+
+/* ///////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------Pricing--------------- */
 
 
@@ -34,7 +186,6 @@
     background-color: #e84545;
     top: 1.2rem;
     right: 36.5rem;
-
 }
 
 #Pricing h2::before {
