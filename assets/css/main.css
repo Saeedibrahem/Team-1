@@ -1,18 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
-:root{
+
+:root {
     --color-primary: #e84545;
     --color-primary-rgb: rgb(232, 69, 69);
-    --color-secondary: #32353a;
+    --color-secondary: #444444;
     --color-background: #f4f4f4;
+    --color-background-rgb: 0, 0, 0;
     --color-box-background: #f7f7f7;
 }
+
+<<<<<<< HEAD
+
+
+
+
+
+/* ! start services part */
+
+.services{
+    /* background-color: aquamarine; */
+    position: relative;
+}
+
+.services__title{
+    text-align: center;
+}
+.services__title h2{
+    font-size: 2rem;
+    width: fit-content;
+    margin: auto;
+    font-weight: 700;
+    position: relative;
+}
+
+.services__title h2::before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 20px;
+    left: -40%;
+}
+.services__title h2::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 20px;
+    right: -40%;
+}
+
+.services__content{
+    /* border-top: 2px solid #E8E9E9; */
+    position: relative;
+}
+
+.service-icon{
+    position: relative;
+}
+
+.service-icon::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F8C7C7;
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    z-index: 1;
+}
+
+.service-icon i{
+    font-size: 3.5rem;
+    color: #636669;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+
+}
+.col-6{
+    position: relative;
+}
+
+
+.col-6::after{
+    content: "";
+    width: 95%;
+    height: 2px;
+    background-color: #E8E9E9;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.service-disc p{
+    position: relative;
+    font-size: 14px;
+    width: fit-content;
+}
+/* .service-disc p::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F8C7C7;
+    position: absolute;
+    bottom: 5px;
+    left: -50px;
+    z-index: 1;
+} */
+
+
+
+
+.service-disc h4{
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.service-disc h4::after{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #E84545;
+    position: absolute;
+    top: -40px;
+    left: -120px;
+    z-index: 5;
+}
+
+/* ///////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
+/* start navbar  */
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-secondary);
+    /* color: white; */
+}
+
+span {
+    color: var(--color-primary);
+}
+
+.collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav {
+    gap: 15px;
+    padding: 18px 15px;
+}
+
+.navbar-nav li a {
+    font-weight: 500;
+    font-family: Lato, sans-serif;
+}
+
+.navbar-nav li a {
+    color: var(--color-secondary);
+}
+
+.navbar-nav li a:hover {
+    color: var(--color-primary);
+}
+
+.navbar-nav li .active {
+    color: var(--color-primary) !important;
+}
+
+/* buttom */
+form .btn {
+    padding: 7px 25px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--color-primary);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form .btn:hover {
+    background-color: rgb(243, 77, 77);
+}
+
+/* end navbar  */
+
+/* start home  */
+#home {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/hero-bg.jpg);
+    background-position: 0rem -10rem;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* end home */
+
+/* start about section  */
+
+/* end about section */
+>>>>>>> 7377f156b524b625aad73aa920061edc80cc76c8
 
 /* -----------------Pricing--------------- */
 
@@ -35,8 +284,12 @@
     width: 2.7rem;
     background-color: #e84545;
     top: 1.2rem;
+<<<<<<< HEAD
     right: -50%;
 
+=======
+    right: 36.5rem;
+>>>>>>> 9ee19c072ed7a9d8d71531d3e53551a893435886
 }
 
 #Pricing h2::before {
@@ -112,8 +365,11 @@
     font-weight: 400;
     color: #a7a9ab;
 }
+<<<<<<< HEAD
 
 .price_text i {
     font-size: 24px;
     color: #0a9856;
 }
+=======
+>>>>>>> 9ee19c072ed7a9d8d71531d3e53551a893435886
