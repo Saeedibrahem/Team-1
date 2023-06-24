@@ -33,7 +33,7 @@
 .services__title{
     text-align: center;
 }
-.services__title h2{
+.title h2{
     font-size: 2rem;
     width: fit-content;
     margin: auto;
@@ -41,19 +41,19 @@
     position: relative;
 }
 
-.services__title h2::before{
+.title h2::before{
     content: "";
     width: 50px;
-    height: 2px;
+    height: 1px;
     background-color: var(--color-primary);
     position: absolute;
     top: 20px;
     left: -40%;
 }
-.services__title h2::after{
+.title h2::after{
     content: "";
     width: 50px;
-    height: 2px;
+    height: 1px;
     background-color: var(--color-primary);
     position: absolute;
     top: 20px;
@@ -131,6 +131,11 @@
     position: relative;
 }
 
+.service-disc h4:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
 .service-disc h4::after{
     content: "";
     width: 20px;
@@ -142,7 +147,7 @@
     z-index: 5;
 }
 
-/* ///////////////////////// */
+/*! end services part */
 
 
 
@@ -196,7 +201,6 @@
     background-color: #e84545;
     top: 1.2rem;
     right: -50%;
-
 }
 
 #Pricing h2::before {
