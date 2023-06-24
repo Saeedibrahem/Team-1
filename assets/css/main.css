@@ -238,6 +238,10 @@ form .btn:hover {
     font-weight: 700;
 }
 
+.paragraph_space {
+    margin-bottom: 7rem;
+}
+
 
 #Pricing h2::after {
     content: "";
@@ -277,53 +281,156 @@ form .btn:hover {
     font-weight: 600;
 }
 
-.icon {
+/* ----------free-------- */
+
+.free_plan_icon {
     margin: 1.3rem 0 2rem 0;
-    width: 70px;
-    height: 70px;
-    font-size: 28px;
+    width: 6.181rem;
+    height: 6.181rem;
+    font-size: 2.013rem;
 }
 
-.icon i {
+.free_plan_icon i {
     position: absolute;
     background-color: #e84545;
-    height: 70px;
-    width:  70px;
+    width: 4.375rem;
+    height: 4.375rem;
     border-radius: 50%;
     z-index: 5;
 }
 
-.icon::after {
+.free_plan_icon::after {
     content: "";
     position: absolute;
-    height: 86px;
-    width: 86px;
+    height: 5.375rem;
+    width: 5.375rem;
     background-color: #f8cbcb;
     border-radius: 50%;
 }
 
-.icon::before {
+.free_plan_icon::before {
     content: "";
     position: absolute;
-    height: 102px;
-    width: 102px;
+    height: 6.375rem;
+    width: 6.375rem;
     background-color: #fdecec;
     border-radius: 50%;
 }
 
-.price h4 {
+.free_plan_price h4 {
     color: #e84545;
     font-size: 3rem;
     font-weight: 700;
 }
 
-.price sub {
+.free_plan_price sub {
     font-size: 1.2rem;
     font-weight: 400;
     color: #a7a9ab;
 }
 
-.price_text i {
+.free_plan_price_text_container_list {
+    list-style: none;
+}
+
+.free_plan_price_text_container_list i {
+    font-size: 24px;
+    color: #0a9856;
+
+}
+.free_plan_price_text_container_list_2 i {
+    font-size: 24px;
+    color: #bdbebf;
+}
+
+.free_plan_price_text_container_list p {
+    color: #212529cc;
+}
+
+.free_plan_price_text_container_list_2 del {
+    color: #bdbebf;
+}
+
+.btn {
+    border: 1px solid rgba(0, 0, 0, .2) !important;
+    border-radius: 3px !important;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 600;
+    padding: 10px 40px;
+}
+
+/* ---------business------- */
+
+.business_plan_icon {
+    margin: 1.3rem 0 2rem 0;
+    width: 6.181rem;
+    height: 6.181rem;
+    font-size: 2.013rem;
+}
+
+.business_plan_icon i {
+    position: absolute;
+    background-color: #e84545;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.business_plan_icon::after {
+    content: "";
+    position: absolute;
+    height: 5.375rem;
+    width: 5.375rem;
+    background-color: #f8cbcb;
+    border-radius: 50%;
+}
+
+.business_plan_icon::before {
+    content: "";
+    position: absolute;
+    height: 6.375rem;
+    width: 6.375rem;
+    background-color: #fdecec;
+    border-radius: 50%;
+}
+
+.business_plan_price h4 {
+    color: #e84545;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.business_plan_price sub {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a7a9ab;
+}
+
+.business_plan_price_text_container_list {
+    list-style: none;
+}
+
+.business_plan_price_text_container_list i {
+    font-size: 24px;
+    color: #0a9856;
+
+}
+.business_plan_price_text_container_list_2 i {
     font-size: 24px;
     color: #0a9856;
 }
+
+.business_plan_price_text_container_list p {
+    color: #212529cc;
+}
+
+.business_plan_price_text_container_list_2 p {
+    color: #212529cc;
+}
+
+.business_plan_buy_now button {
+    color: white;
+}
+
+
