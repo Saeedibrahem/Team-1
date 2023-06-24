@@ -151,6 +151,9 @@ form .btn:hover {
 }
 /* end home */
 /* start flags */
+.flags .row {
+    width: 100%;
+}
 .flags .flags-img img{
     padding: 40px;
     max-width: 80%;
