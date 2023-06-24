@@ -11,7 +11,7 @@
 
 :root {
     --color-primary: #e84545;
-    --color-primary-rgb: rgb(232, 69, 69);
+    --color-primary-rgb: #EA5757;
     --color-secondary: #444444;
     --color-background: #f4f4f4;
     --color-background-rgb: 0, 0, 0;
@@ -75,7 +75,7 @@ form .btn {
 }
 
 form .btn:hover {
-    background-color: rgb(243, 77, 77);
+        background-color: #EA5757;
 }
 
 /* end navbar  */
@@ -147,7 +147,7 @@ form .btn:hover {
     font-size: 16px;
 }
 #home .home-form .home-btn:hover {
-    background-color: rgb(243, 77, 77);
+    background-color: #EA5757;
 }
 /* end home */
 /* start flags */
