@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 * {
     padding: 0;
@@ -19,8 +19,151 @@
 }
 
 
+/* start navbar  */
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+}
 
 
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-secondary);
+    /* color: white; */
+}
+
+span {
+    color: var(--color-primary);
+}
+
+.collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav {
+    gap: 15px;
+    padding: 18px 15px;
+}
+
+.navbar-nav li a {
+    font-weight: 500;
+    font-family: Lato, sans-serif;
+}
+
+.navbar-nav li a {
+    color: var(--color-secondary);
+}
+
+.navbar-nav li a:hover {
+    color: var(--color-primary);
+}
+
+.navbar-nav li .active {
+    color: var(--color-primary) !important;
+}
+
+/* buttom */
+form .btn {
+    padding: 7px 25px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--color-primary);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form .btn:hover {
+    background-color: rgb(243, 77, 77);
+}
+
+/* end navbar  */
+
+/* start home  */
+#home {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/hero-bg.jpg);
+    background-position: 0rem -10rem;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+#home .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100vh;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    padding-top: 100px;
+}
+.container .welcome-msg {
+    font-size: 44px;
+    font-weight: 700;
+    width: 100%;
+    z-index: 2;
+}
+.container .home-p {
+    margin: 0;
+    z-index: 2;
+    font-size: 20px;
+    width: 100%;
+    font-weight: 400;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.home-form {
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.home-form input {
+    width: 408.922px;
+    border: 0;
+    outline: 0;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+#home .home-form .home-btn {
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--color-primary);
+    border-radius: 7px;
+    padding: 8px 20px 10px 20px;
+    font-size: 16px;
+}
+#home .home-form .home-btn:hover {
+    background-color: rgb(243, 77, 77);
+}
+/* end home */
+/* start flags */
+.flags .flags-img img{
+    padding: 40px;
+    max-width: 80%;
+    transition: 0.3s;
+    opacity: 0.5;
+    filter: grayscale(100);
+}
+.flags .flags-img img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+}
+/* end flags */
+/* start about section  */
 
 
 /* ! start services part */
@@ -228,11 +371,12 @@
 .features-2 .row .features-2-txt p{
     color: #4D5154;
 }
-.features-2 .row .features-2-txt span{
-}
+/* .features-2 .row .features-2-txt span{
+} */
 .features-2 .row .features-2-txt i{
     color: #E84545;
 }
+
 
 
 
@@ -267,6 +411,10 @@
     font-family: Montserrat;
     font-size: 2rem;
     font-weight: 700;
+}
+
+.paragraph_space {
+    margin-bottom: 7rem;
 }
 
 
@@ -308,53 +456,156 @@
     font-weight: 600;
 }
 
-.icon {
+/* ----------free-------- */
+
+.free_plan_icon {
     margin: 1.3rem 0 2rem 0;
-    width: 70px;
-    height: 70px;
-    font-size: 28px;
+    width: 6.181rem;
+    height: 6.181rem;
+    font-size: 2.013rem;
 }
 
-.icon i {
+.free_plan_icon i {
     position: absolute;
     background-color: #e84545;
-    height: 70px;
-    width:  70px;
+    width: 4.375rem;
+    height: 4.375rem;
     border-radius: 50%;
     z-index: 5;
 }
 
-.icon::after {
+.free_plan_icon::after {
     content: "";
     position: absolute;
-    height: 86px;
-    width: 86px;
+    height: 5.375rem;
+    width: 5.375rem;
     background-color: #f8cbcb;
     border-radius: 50%;
 }
 
-.icon::before {
+.free_plan_icon::before {
     content: "";
     position: absolute;
-    height: 102px;
-    width: 102px;
+    height: 6.375rem;
+    width: 6.375rem;
     background-color: #fdecec;
     border-radius: 50%;
 }
 
-.price h4 {
+.free_plan_price h4 {
     color: #e84545;
     font-size: 3rem;
     font-weight: 700;
 }
 
-.price sub {
+.free_plan_price sub {
     font-size: 1.2rem;
     font-weight: 400;
     color: #a7a9ab;
 }
 
-.price_text i {
+.free_plan_price_text_container_list {
+    list-style: none;
+}
+
+.free_plan_price_text_container_list i {
+    font-size: 24px;
+    color: #0a9856;
+
+}
+.free_plan_price_text_container_list_2 i {
+    font-size: 24px;
+    color: #bdbebf;
+}
+
+.free_plan_price_text_container_list p {
+    color: #212529cc;
+}
+
+.free_plan_price_text_container_list_2 del {
+    color: #bdbebf;
+}
+
+.btn {
+    border: 1px solid rgba(0, 0, 0, .2) !important;
+    border-radius: 3px !important;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 600;
+    padding: 10px 40px;
+}
+
+/* ---------business------- */
+
+.business_plan_icon {
+    margin: 1.3rem 0 2rem 0;
+    width: 6.181rem;
+    height: 6.181rem;
+    font-size: 2.013rem;
+}
+
+.business_plan_icon i {
+    position: absolute;
+    background-color: #e84545;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.business_plan_icon::after {
+    content: "";
+    position: absolute;
+    height: 5.375rem;
+    width: 5.375rem;
+    background-color: #f8cbcb;
+    border-radius: 50%;
+}
+
+.business_plan_icon::before {
+    content: "";
+    position: absolute;
+    height: 6.375rem;
+    width: 6.375rem;
+    background-color: #fdecec;
+    border-radius: 50%;
+}
+
+.business_plan_price h4 {
+    color: #e84545;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.business_plan_price sub {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a7a9ab;
+}
+
+.business_plan_price_text_container_list {
+    list-style: none;
+}
+
+.business_plan_price_text_container_list i {
+    font-size: 24px;
+    color: #0a9856;
+
+}
+.business_plan_price_text_container_list_2 i {
     font-size: 24px;
     color: #0a9856;
 }
+
+.business_plan_price_text_container_list p {
+    color: #212529cc;
+}
+
+.business_plan_price_text_container_list_2 p {
+    color: #212529cc;
+}
+
+.business_plan_buy_now button {
+    color: white;
+}
+
+

@@ -18,8 +18,8 @@
             <div class="container-fluid">
                 <h1><a class="navbar-brand" href="#">Append <span>.</span></a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -28,7 +28,7 @@
                             <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
@@ -72,12 +72,40 @@
     <!-- ------start home-------- -->
     <section id="home">
             <div class="container">
-                asdasdas
+                <h2 class="welcome-msg">Welcome to Our Website</h2>
+                <p class="home-p">We are team of talented designers making websites with Bootstrap</p>
+                <form class="home-form bg-white z-2">
+                    <input type="text" name="" id="" placeholder="Enter email address">
+                    <button type="submit" class="home-btn btn">Sign up</button>
+                </form>
             </div>
             
     </section>
     <!-- --------end home-------- -->
-
+    <!-- ------start flags------- -->
+    <section class="flags d-flex">
+        <div class="row">
+            <div class="col-xl-2 col-md-3 col-6 flags-img">
+                <img src="assets/images/client-1.png" alt="">
+            </div>
+            <div class="col-xl-2 col-md-3 col-6 flags-img">
+                <img src="assets/images/client-2.png" alt="">
+            </div>
+            <div class="col-xl-2 col-md-3 col-6 flags-img">
+                <img src="assets/images/client-3.png" alt="">
+            </div>
+            <div class="col-xl-2 col-md-3 col-6 flags-img">
+                <img src="assets/images/client-4.png" alt="">
+            </div>
+            <div class="col-xl-2 col-md-3 col-6 flags-img">
+                <img src="assets/images/client-5.png" alt="">
+            </div>
+            <div class="col-xl-2 col-md-3 col-6 flags-img">
+                <img src="assets/images/client-6.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- -------end flags-------- -->
     <!-- ---start about section-- -->
 
     <!-- ---end about section---- -->
@@ -233,40 +261,85 @@
 
 
 
-
     <!-- ------------------Pricing------------------ -->
     <section class="container" id="Pricing">
         <h2 class="mb-2">Pricing</h2>
-        <p class="text-center mb-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+        <p class="paragraph_space text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
         </p>
-        <div class="row m-auto d-flex flex-nowrap  ">
-            <div class="col-4 py-5 px-4 d-flex flex-column align-items-center justify-content-center">
-                <h3>Free Plan</h3>
-                <div class="icon position-relative d-flex justify-content-center align-items-center">
-                    <i style="color: white;" class="bi bi-box d-flex justify-content-center align-items-center"></i>
+        <div class="row m-auto d-flex flex-nowrap">
+            <div class="col-4 py-5 px-4 d-flex flex-column">
+                <div class="free_plan_container d-flex flex-column align-items-center justify-content-center">
+                    <h3>Free Plan</h3>
+                    <div class="free_plan_icon position-relative d-flex justify-content-center align-items-center">
+                        <i style="color: white;" class="bi bi-box d-flex justify-content-center align-items-center"></i>
+                    </div>
                 </div>
-                <div class="price">
-                    <div class="price_container d-flex align-items-center mb-5">
+                <div class="free_plan_price">
+                    <div class="free_plan_price_container d-flex align-items-center justify-content-center mb-5">
                         <h4><sup>$</sup>0 <sub>/ month</sub></h4>
                     </div>
-                    <div class="price_text">
-                        <div class="price_text_container d-flex justify-content-center align-items-center gap-2 mb-2">
-                            <i class="bi bi-check"></i>
+                    <ul class="free_plan_price_text_container">
+                        <li class="free_plan_price_text_container_list d-flex align-items-center mb-2">
+                            <i class="bi bi-check pe-2"></i>
                             <p class="m-0">Quam adipiscing vitae proin</p>
-                        </div>
-                        <div class="price_text_container d-flex justify-content-center align-items-center gap-2 mb-2">
-                            <i class="bi bi-check"></i>
-                            <p class="m-0">Quam adipiscing vitae proin</p>
-                        </div>
-                        <div class="price_text_container d-flex justify-content-center align-items-center gap-2 mb-2">
-                            <i class="bi bi-check"></i>
-                            <p class="m-0">Quam adipiscing vitae proin</p>
-                        </div>
+                        </li>
+                        <li class="free_plan_price_text_container_list d-flex align-items-center mb-2">
+                            <i class="bi bi-check pe-2"></i>
+                            <p class="m-0">Nec feugiat nisl pretium</p>
+                        </li>
+                        <li class="free_plan_price_text_container_list d-flex align-items-center mb-2">
+                            <i class="bi bi-check pe-2"></i>
+                            <p class="m-0">Nulla at volutpat diam uteera</p>
+                        </li>
+                        <li class="free_plan_price_text_container_list_2 d-flex align-items-center mb-2">
+                            <i class="bi bi-x pe-2"></i>
+                            <del>Pharetra massa massa ultricies</del>
+                        </li>
+                        <li class="free_plan_price_text_container_list_2 d-flex align-items-center mb-2">
+                            <i class="bi bi-x pe-2"></i>
+                            <del>Massa ultricies mi quis hendrerit</del>
+                        </li>
+                    </ul>
+                    <div class="free_plan_buy_now d-flex justify-content-center mt-5">
+                        <button class="btn btn-outline-danger">Buy Now</button>
                     </div>
                 </div>
             </div>
-            <div class="mid col-4 py-5 px-4 text-center">
+            <div class="mid col-4 py-5 px-4 text-center d-flex flex-column align-items-center">
                 <h3>Business Plan</h3>
+                <div class="business_plan_icon position-relative d-flex justify-content-center align-items-center">
+                    <i style="color: white;" class="bi bi-rocket d-flex justify-content-center align-items-center"></i>
+                </div>
+                <div class="business_plan_price">
+                    <div class="business_plan_price_container d-flex align-items-center justify-content-center mb-5">
+                        <h4><sup>$</sup>29 <sub>/ month</sub></h4>
+                    </div>
+                    <ul class="business_plan_price_text_container">
+                        <li class="business_plan_price_text_container_list d-flex align-items-center mb-2">
+                            <i class="bi bi-check pe-2"></i>
+                            <p class="m-0">Quam adipiscing vitae proin</p>
+                        </li>
+                        <li class="business_plan_price_text_container_list d-flex align-items-center mb-2">
+                            <i class="bi bi-check pe-2"></i>
+                            <p class="m-0">Nec feugiat nisl pretium</p>
+                        </li>
+                        <li class="business_plan_price_text_container_list d-flex align-items-center mb-2">
+                            <i class="bi bi-check pe-2"></i>
+                            <p class="m-0">Nulla at volutpat diam uteera</p>
+                        </li>
+                        <li class="business_plan_price_text_container_list_2 d-flex align-items-center mb-2">
+                            <i class="bi bi-check pe-2"></i>
+                            <p class="m-0">Pharetra massa massa ultricies</p>
+                        </li>
+                        <li class="business_plan_price_text_container_list_2 d-flex align-items-center mb-2">
+                            <i class="bi bi-check pe-2"></i>
+                            <p class="m-0">Massa ultricies mi quis hendrerit</p>
+                        </li>
+                    </ul>
+                    <div class="business_plan_buy_now d-flex justify-content-center mt-5">
+                        <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                </div>
             </div>
             <div class="col-4 py-5 px-4 text-center">
                 <h3>Developer Plan</h3>
