@@ -18,6 +18,10 @@
     --color-box-background: #f7f7f7;
 }
 
+ul{
+    padding-left: 0 !important;
+}
+
 
 /* start navbar  */
 .navbar {
@@ -442,13 +446,13 @@ form .btn:hover {
 
 }
 
-.col-4 {
+.col-lg-4 {
     border-radius: 15px;
     box-shadow: 0 2px 22px -12px;
 }
 
 .mid {
-    transform: scale(1.15);
+    transform: scaleY(1.15);
     border: 2.5px solid #e84545;
     box-shadow: none;
     background-color: white;
@@ -611,4 +615,84 @@ form .btn:hover {
     color: white;
 }
 
+/* ------------developer------------ */
 
+.developer_plan_icon {
+    margin: 1.3rem 0 2rem 0;
+    width: 6.181rem;
+    height: 6.181rem;
+    font-size: 2.013rem;
+}
+
+.developer_plan_icon i {
+    position: absolute;
+    background-color: #e84545;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.developer_plan_icon::after {
+    content: "";
+    position: absolute;
+    height: 5.375rem;
+    width: 5.375rem;
+    background-color: #f8cbcb;
+    border-radius: 50%;
+}
+
+.developer_plan_icon::before {
+    content: "";
+    position: absolute;
+    height: 6.375rem;
+    width: 6.375rem;
+    background-color: #fdecec;
+    border-radius: 50%;
+}
+
+.developer_plan_price h4 {
+    color: #e84545;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.developer_plan_price sub {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a7a9ab;
+}
+
+.developer_plan_price_text_container_list {
+    list-style: none;
+}
+
+.developer_plan_price_text_container_list i {
+    font-size: 24px;
+    color: #0a9856;
+
+}
+.developer_plan_price_text_container_list_2 i {
+    font-size: 24px;
+    color: #0a9856;
+}
+
+.developer_plan_price_text_container_list p {
+    color: #212529cc;
+}
+
+.developer_plan_price_text_container_list_2 p {
+    color: #212529cc;
+}
+
+.pricing_part2 {
+    margin-top: 11rem;
+}
+
+@media screen and (max-width:992px) {
+    .mid {
+        transform: none;
+        box-shadow: 0 2px 22px -12px;
+    }
+    
+}
