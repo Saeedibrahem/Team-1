@@ -52,7 +52,7 @@ ul{
 .navbar {
     background-color: white;
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
-    word-wrap: normal;
+    flex-wrap: nowrap;
 }
 .navbar .navbar-toggler {
     border: none;
@@ -420,21 +420,21 @@ form .btn:hover {
 
 .title h2::before{
     content: "";
-    width: 50px;
-    height: 1px;
-    background-color: var(--color-primary);
     position: absolute;
-    top: 20px;
-    left: -40%;
+    height: 1.5px;
+    width: 2.7rem;
+    background-color: #e84545;
+    top: 1.2rem;
+    right: -50%;
 }
 .title h2::after{
     content: "";
-    width: 50px;
-    height: 1px;
-    background-color: var(--color-primary);
     position: absolute;
-    top: 20px;
-    right: -40%;
+    height: 1.5px;
+    width: 2.7rem;
+    background-color: #e84545;
+    top: 1.2rem;
+    left: -50%;
 }
 
 .services__content{
@@ -466,12 +466,12 @@ form .btn:hover {
     width: fit-content;
 
 }
-.services__content .col-md-6{
+.services__content .col-lg-6{
     position: relative;
 }
 
 
-.services__content .col-md-6::after{
+.services__content .col-lg-6::after{
     content: "";
     width: 95%;
     height: 2px;
