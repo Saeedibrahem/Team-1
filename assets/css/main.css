@@ -52,6 +52,7 @@ ul{
 .navbar {
     background-color: white;
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: normal;
 }
 .navbar .navbar-toggler {
     border: none;
