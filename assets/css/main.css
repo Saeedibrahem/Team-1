@@ -465,12 +465,12 @@ form .btn:hover {
     width: fit-content;
 
 }
-.col-6{
+.services__content .col-md-6{
     position: relative;
 }
 
 
-.col-6::after{
+.services__content .col-md-6::after{
     content: "";
     width: 95%;
     height: 2px;
