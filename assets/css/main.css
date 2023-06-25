@@ -353,13 +353,17 @@ form .btn:hover {
 @media screen and (max-width: 1267px) {
     #about .about-text {
         width: 100%;
+        margin-top: 65px;
     }
     #about .about-card {
         width: 100%;
         justify-content: center;
     }
-    .about-card .section-cards {
+    /* .about-card .section-cards {
         width: 408px;
+    } */
+    .about-card .section-cards {
+        width: 48%;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -367,9 +371,9 @@ form .btn:hover {
     #about .about-text {
         width: 100%;
     }
-    .about-card .section-cards {
+    /* .about-card .section-cards {
         width: 336px;
-    }
+    } */
     #about .container-fluid {
         width: 91%;
         padding: 0;
