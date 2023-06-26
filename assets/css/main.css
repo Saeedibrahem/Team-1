@@ -546,6 +546,14 @@ form .btn:hover {
     text-align: center;
 }
 
+.features__txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+}
+
 .features__txt h3{
     font-size: 26px;
     font-weight: 700;
@@ -558,7 +566,8 @@ form .btn:hover {
 .features__img1{
     position: relative;
     border: 5px solid #FEFEFE;
-    margin-left: auto;
+    width: 34.969rem;
+    height: 24.688rem;
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
 
 }
@@ -573,12 +582,13 @@ form .btn:hover {
 .features__img2{
     border: 5px solid #FEFEFE;
     position: absolute;
-    top: 35%;
-    right: 20%;
-    width: 40%;
+    top: 25%;
+    right: 43%;
+    width: 31.083rem;
+    height: 21.968rem;
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
-
 }
+
 .features__img2 img{
     width: 100%;
     height: 100%;
@@ -624,9 +634,71 @@ form .btn:hover {
 
 
 
+@media screen and (max-width: 1441px) {
+    
+    .features__txt h3 {
+        font-size: 26px !important;
+        font-weight: 700 !important;
+    }
 
+    .features__img2 {
+        width: 497.33px ;
+        height: 351.49px ;
+        right: 40%;
+    }
+    
+    .features__img1 {
+        width: 559.5px ;
+        height: 395px ;
+    }
+}
 
+@media screen and (max-width: 1025px) {
+    
+    .features__txt{
+        margin-bottom: 6rem;
+    }
 
+    .features__txt h3 {
+        font-size: 26px !important;
+        font-weight: 700 !important;
+    }
+
+    .features__img2 {
+        width: 357.33px ;
+        height: 235.49px ;
+    }
+    
+    .features__img1 {
+        width: 402px ;
+        height: 284.75px ;
+    }
+    
+}
+
+@media screen and (max-width: 769px) {
+
+    .features__txt {
+        width: 100%;
+        order: 2;
+        margin-bottom: 3rem;
+    }
+
+    /* .features__imgs {
+        width: 100%;
+    } */
+
+    .features__img2 {
+        width: 464px ;
+        height: 328.15px ;
+        right: 34%;
+    }
+    
+    .features__img1 {
+        width: 522px ;
+        height: 368.75px ;
+    }
+}
 
 
 
