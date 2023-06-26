@@ -418,6 +418,7 @@ form .btn:hover {
 .services__title{
     text-align: center;
 }
+
 .title h2{
     font-size: 2rem;
     width: fit-content;
@@ -429,20 +430,21 @@ form .btn:hover {
 .title h2::before{
     content: "";
     position: absolute;
-    height: 1.5px;
+    height: 2px;
     width: 2.7rem;
     background-color: #e84545;
     top: 1.2rem;
-    right: -50%;
+    right: -3.8rem;
 }
+
 .title h2::after{
     content: "";
     position: absolute;
-    height: 1.5px;
+    height: 2px;
     width: 2.7rem;
     background-color: #e84545;
     top: 1.2rem;
-    left: -50%;
+    left: -3.8rem;
 }
 
 .services__content{
@@ -474,10 +476,10 @@ form .btn:hover {
     width: fit-content;
 
 }
+
 .services__content .col-lg-6{
     position: relative;
 }
-
 
 .services__content .col-lg-6::after{
     content: "";
@@ -494,20 +496,6 @@ form .btn:hover {
     font-size: 14px;
     width: fit-content;
 }
-/* .service-disc p::after{
-    content: "";
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #F8C7C7;
-    position: absolute;
-    bottom: 5px;
-    left: -50px;
-    z-index: 1;
-} */
-
-
-
 
 .service-disc h4{
     font-size: 1.15rem;
@@ -559,7 +547,7 @@ form .btn:hover {
     font-weight: 700;
 }
 .features__imgs{
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 
@@ -611,9 +599,13 @@ form .btn:hover {
     height: 100%;
     object-fit: cover;
 }
-
+.features-2{
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+}
 .features-2-txt{
-    padding: 8rem 2rem;
+    padding: 2rem;
 }
 .features-2 .row .features-2-txt  h3{
     font-size: 1.6rem;
@@ -633,7 +625,7 @@ form .btn:hover {
 
 
 
-
+/* meadia for features part */
 @media screen and (max-width: 1441px) {
     
     .features__txt h3 {
@@ -653,7 +645,30 @@ form .btn:hover {
     }
 }
 
-@media screen and (max-width: 1025px) {
+/* @media screen and (max-width: 1025px) {
+    
+    .features__txt{
+        margin-bottom: 6rem;
+    }
+
+    .features__txt h3 {
+        font-size: 26px !important;
+        font-weight: 700 !important;
+    }
+
+    .features__img2 {
+        width: 357.33px ;
+        height: 235.49px ;
+    }
+    
+    .features__img1 {
+        width: 402px ;
+        height: 284.75px ;
+    }
+    
+} */
+
+@media screen and (min-width: 993px) and (max-width:1440px) {
     
     .features__txt{
         margin-bottom: 6rem;
@@ -676,18 +691,21 @@ form .btn:hover {
     
 }
 
-@media screen and (max-width: 769px) {
+
+@media screen and (max-width: 992px) {
 
     .features__txt {
-        width: 100%;
+        width: 80%;
         order: 2;
+        margin: auto;
         margin-bottom: 3rem;
     }
 
-    /* .features__imgs {
-        width: 100%;
-    } */
-
+    .features__imgs{
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .features__img2 {
         width: 464px ;
         height: 328.15px ;
@@ -700,9 +718,93 @@ form .btn:hover {
     }
 }
 
+@media screen and (max-width: 776px){
+    .features__txt {
+        width: 100% !important;
+        order: 2;
+        /* margin: auto; */
+    }
+    
+    .features__img2 {
+        width: 344px ;
+        height: 244px ;
+        right: 34%;
+    }
+    
+    .features__img1 {
+        width: 387px ;
+        height: 274.25px ;
+    }
+}
 
+@media screen and (max-width: 551px){
+    .features__txt {
+        width: 100% !important;
+        order: 2;
+        /* margin: auto; */
+    }
+    
+    .features__img2 {
+        width: 300px ;
+        height: 244px ;
+        right: 27%;
+    }
+    
+    .features__img1 {
+        width: 340px ;
+        height: 241.25px ;
+    }
+}
+@media screen and (max-width: 426px){
+    .features__txt {
+        width: 100% !important;
+        order: 2;
+        /* margin: auto; */
+    }
+    
+    .features__img2 {
+        width: 267.73px ;
+        height: 190.76px ;
+        right: 25%;
+    }
+    
+    .features__img1 {
+        width: 301px ;
+        height: 214.25px ;
+    }
+}
+@media screen and (max-width: 376px){
+    .features__txt {
+        width: 100% !important;
+        order: 2;
+    }
+    
+    .features__img2 {
+        width: 234px ;
+        height: 167px ;
+        right: 27%;
+    }
+    
+    .features__img1 {
+        width: 263px ;
+        height: 187.74px ;
+    }
+}
+@media screen and (max-width: 322px){
 
-
+    .features__img2 {
+        width: 197.33px ;
+        height: 141.5px ;
+        right: 33%;
+    }
+    
+    .features__img1 {
+        width: 222px ;
+        height: 158.75px ;
+        margin: auto;
+    }
+}
+/* end features part with its media */
 
 
 
@@ -739,7 +841,7 @@ form .btn:hover {
     width: 2.7rem;
     background-color: #e84545;
     top: 1.2rem;
-    right: -50%;
+    right: -3.8rem;
 }
 
 #Pricing h2::before {
@@ -749,11 +851,11 @@ form .btn:hover {
     width: 2.7rem;
     background-color: #e84545;
     top: 1.2rem;
-    left: -50%;
+    left: -3.8rem;
 
 }
 
-.col-lg-4 {
+#Pricing .row .col-lg-4 {
     border-radius: 15px;
     box-shadow: 0 2px 22px -12px;
 }
@@ -1002,4 +1104,151 @@ form .btn:hover {
         box-shadow: 0 2px 22px -12px;
     }
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start TEAMS part  */
+
+.teams{
+    width: 100%;
+    background-color: #F4F4F4;
+}
+
+.teams__title{
+text-align: center;
+}
+
+.member-photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 50% ;
+    position: relative;
+    background-image: url("/assets/images/team-1.jpg");
+    background-size: cover;
+    outline: 4px solid #ffff;
+    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.photo-2{
+    background-image: url("/assets/images/team-2.jpg")
+}
+.photo-3{
+    background-image: url("/assets/images/team-3.jpg")
+}
+.photo-4{
+    background-image: url("/assets/images/team-4.jpg")
+}
+.photo-5{
+    background-image: url("/assets/images/team-5.jpg")
+}
+.photo-6{
+    background-image: url("/assets/images/team-6.jpg")
+}
+.photo-2{
+    background-image: url("/assets/images/team-2.jpg")
+}
+
+
+
+.member-social i{
+    font-size: 20px;
+    color: #fff;
+}
+.member-social i:hover{
+    color: #e84545;
+    cursor: pointer;
+}
+.member-social{
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: 0.2s;
+}
+.member-photo:hover .member-social{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.member-info h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.member-info span{
+    font-size: 15px;
+    font-style: italic;
+    color: rgba(33, 37, 41, 0.6);
+}
+
+.member-info p{
+    font-family: system-ui, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: rgb(33, 37, 41);
+    margin-top: 1rem;
+
 }
