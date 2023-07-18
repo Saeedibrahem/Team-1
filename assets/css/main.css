@@ -1633,6 +1633,10 @@ form .btn:hover {
 }
 /* -----------------saeed end------ */
 
+.holder input {
+  width: 47%;
+}
+
 #contacts h2 {
   position: relative;
   width: fit-content;
